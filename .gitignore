@@ -1,0 +1,43 @@
+# Sobras do template Bootstrap original. O site foi reescrito sem Bootstrap
+# e nada mais referencia estes arquivos (verificado por busca em todo o
+# projeto). Ficam no disco local, fora do repositório.
+assets/
+carousel.css
+carousel.rtl.css
+cover.css
+
+# Fontes: só os .woff2 vão para o repositório. Os .ttf são o fallback
+# declarado no @font-face, então ESTES ficam versionados de propósito.
+font/*.zip
+
+# Imagens de trabalho não usadas pelo site final
+img/*Copia*
+img/logo.png
+img/logo_old.png
+img/logo50x50.png
+img/logo50x50-removebg-preview.png
+img/logo-removebg-preview.png
+img/teste.png
+img/NeusaVidalConsltoria.png
+img/fotoNeusa2.jpeg
+
+# Derivados gerados durante a otimização que a versão final não usa.
+# Podem ser regerados a partir dos originais mantidos abaixo.
+img/mark-32.png
+img/mark-64.png
+img/mark.webp
+img/wordmark-450.png
+img/wordmark-450.webp
+
+# MANTIDOS de propósito, mesmo sem estarem no HTML: são os originais de onde
+# saíram os assets do site. Sem eles não é possível regerar nada.
+#   img/logo-sem-fundo.png ................ origem de img/mark-*.png
+#   img/NeusaVidalConsltoria-removebg...png  origem do logotipo com texto
+#   img/fotoNeusaNew.jpeg ................. origem de img/portrait.*
+
+# Arquivos de sistema e de ferramentas locais
+.DS_Store
+Thumbs.db
+desktop.ini
+.claude/
+*.zip

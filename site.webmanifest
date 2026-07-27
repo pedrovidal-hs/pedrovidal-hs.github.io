@@ -1,0 +1,14 @@
+{
+  "name": "Neusa Vidal — Consultoria em qualidade e segurança dos alimentos",
+  "short_name": "Neusa Vidal",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafbf7",
+  "theme_color": "#fafbf7",
+  "icons": [
+    { "src": "img/mark-192.png", "sizes": "175x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/mark-512.png", "sizes": "466x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
