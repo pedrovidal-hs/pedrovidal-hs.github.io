@@ -902,6 +902,36 @@ a:hover {
   box-shadow: var(--shadow-m);
 }
 
+/* Card em destaque: borda da marca e um filete no topo */
+.service--featured {
+  position: relative;
+  border-color: var(--brand-300);
+  box-shadow: var(--shadow-s);
+}
+
+.service--featured::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, var(--brand-500), var(--accent-500));
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
+}
+
+.service__flag {
+  align-self: flex-start;
+  margin-bottom: 0.85rem;
+  padding: 0.2rem 0.7rem;
+  background-color: var(--accent-50);
+  border: 1px solid var(--accent-300);
+  border-radius: var(--radius-pill);
+  color: var(--accent-700);
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
 .service__icon {
   display: grid;
   place-items: center;
