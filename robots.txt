@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neusavidalassessoria.com.br/sitemap.xml
+Sitemap: https://pedrovidal-hs.github.io/sitemap.xml
