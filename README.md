@@ -41,8 +41,16 @@ E acesse `http://localhost:5510`.
 - **Cores e tipografia** ficam em `:root`, no topo do `css/styles.css`.
   Os tons `500` da marca são decorativos: têm contraste abaixo de 3:1 em fundo
   branco e não devem receber texto. Para texto use `700` ou mais escuro.
-- **A fonte Afrah não tem `Ç` maiúsculo nem travessões.** Títulos em caixa alta
-  ou com `—` caem no fallback e destoam. Use caixa normal.
+- **A fonte Afrah não tem travessões** (`–` `—`), nem `…`, `°`, `º`, `ª`.
+  Títulos com esses caracteres caem no fallback e destoam. Prefira vírgula,
+  dois-pontos ou hífen simples.
+- **A cedilha da Afrah foi reconstruída por nós.** A fonte original não tinha
+  glifo de cedilha e mapeava `ç` (U+00E7) para `Aacute`, então o `ç` renderizava
+  como `Á` no arquivo original e desaparecia no subset, caindo no fallback
+  (mais pesado, com aparência de negrito). Os glifos `ccedilla` e `Ccedilla`
+  foram compostos a partir do `c`/`C` mais a vírgula da própria fonte, reduzida
+  a 85% e descida até `-216` unidades. **Ao trocar ou reinstalar a Afrah,
+  refaça essa correção**, senão o `ç` volta a quebrar.
 - **Ao alterar uma pergunta do FAQ**, altere também o texto correspondente no
   `FAQPage` do JSON-LD, no fim do `index.html`. O Google desqualifica o
   resultado enriquecido se o schema descrever texto que não está na página.
